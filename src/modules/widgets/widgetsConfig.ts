@@ -1,0 +1,85 @@
+
+export const widgetsConfig = [
+  {
+    key: "gitHub",
+    iconName: "GitHubIcon",
+    dataGrid: { x: 0, y: 0, w: 2, h: 2 },
+    link: "",
+    text: "GitHub Link",
+  },
+  {
+    key: "linkedin",
+    iconName: "LinkedinIcon",
+    dataGrid: { x: 2, y: 0, w: 2, h: 2 },
+    link: "",
+    text: "LinkedIn Link",
+  },
+  {
+    key: "email",
+    componentName: "",
+    dataGrid: { x: 4, y: 3, w: 4, h: 2 },
+    link: "",
+    text: "kontakt.pasciak@gmail.com",
+  },
+  {
+    key: "firstNameAndSurname",
+    componentName: "",
+    dataGrid: { x: 6, y: 0, w: 4, h: 2 },
+    link: "",
+    text: "Jakub Paściak",
+  },
+  {
+    key: "react",
+    iconName: "ReactIcon",
+    dataGrid: { x: 8, y: 0, w: 2, h: 2 },
+    text: "React",
+  },
+  {
+    key: "html",
+    iconName: "HTMLIcon",
+    dataGrid: { x: 10, y: 0, w: 2, h: 2 },
+    text: "HTML",
+  },
+  {
+    key: "css",
+    iconName: "CSSIcon",
+    dataGrid: { x: 0, y: 2, w: 2, h: 2 },
+    text: "CSS",
+  },
+  {
+    key: "node",
+    iconName: "NodeIcon",
+    dataGrid: { x: 2, y: 2, w: 2, h: 2 },
+    text: "Node",
+  },
+  {
+    key: "figma",
+    iconName: "FigmaIcon",
+    dataGrid: { x: 4, y: 2, w: 2, h: 2 },
+    text: "Figma",
+  },
+  {
+    key: "js",
+    iconName: "JSIcon",
+    dataGrid: { x: 6, y: 2, w: 2, h: 2 },
+    text: "Js",
+  },
+  {
+    key: "ts",
+    iconName: "TypeScriptIcon",
+    dataGrid: { x: 8, y: 2, w: 2, h: 2 },
+    text: "TS",
+  },
+  {
+    key: "language",
+    componentName: "",
+    dataGrid: { x: 10, y: 2, w: 2, h: 2 },
+    text: "language",
+  },
+  {
+    key: "bio",
+    componentName: "",
+    dataGrid: { x: 0, y: 0, w: 4, h: 4},
+    text: "bio",
+  },
+]
