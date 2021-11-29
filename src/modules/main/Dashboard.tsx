@@ -1,22 +1,21 @@
-
-import { Background, WidgetItem } from '../styles/styles'
 import { Circles } from './Circles'
 import "../styles/style.css"
 import {
   Responsive as ResponsiveGridLayout
 } from "react-grid-layout";
 
-import * as Icon from "../icons/icons"
 import { widgetsConfig } from '../widgets/widgetsConfig';
+import { GetWidgets } from '../widgets/GetWidgets';
+
 
 export default function Dashboard() {
 
 
   return (
-    <Background>
+    <div className="background">
 
-      <Circles />
-      
+      {/* <Circles /> */}
+
       <div
         style={{
           position: "absolute",
@@ -36,30 +35,32 @@ export default function Dashboard() {
             overflow: "hidden"
           }}
         >
-        <ResponsiveGridLayout
-          
-          breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-          cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
-          rowHeight={71}
-          width={1201}
-          margin={[25, 25]}
-          isBounded={true}
-          maxRows={8}
-  
-        >
-          {widgetsConfig.map((widget: any) => (
-            <WidgetItem key={widget.key} data-grid={widget.dataGrid}>
-              {/* @ts-ignore */}
-              {widget.iconName && <img src={Icon[widget.iconName]} alt={widget.text} /> }
-            </WidgetItem>
-          ))}
+          <ResponsiveGridLayout
+
+            breakpoints={{ lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
+            cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
+            rowHeight={71}
+            width={1201}
+            margin={[25, 25]}
+            isBounded={true}
+            maxRows={8}
+            // onLayoutChange={(layout) => console.log(layout)}
+          >
+            {widgetsConfig.map((widget: any) => (
+              <div
+                className="widgetItem"
+                key={widget.key} data-grid={widget.dataGrid}
+              >
+                <GetWidgets widget={widget} />
+              </div>
+            ))}
 
 
-        </ResponsiveGridLayout>
+          </ResponsiveGridLayout>
         </div>
       </div>
 
 
-    </Background>
+    </div>
   )
 }

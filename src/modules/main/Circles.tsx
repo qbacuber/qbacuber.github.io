@@ -1,9 +1,7 @@
-import { Circles2, Circles1, Circles3 } from "../styles/styles";
-
 export const Circles = () => (
   <>
-    <Circles1 />
-    <Circles2 />
-    <Circles3 />
+    <div className="Circles1" />
+    <div className="Circles2" />
+    <div className="Circles3" />
   </>
 )
