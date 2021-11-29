@@ -91,6 +91,23 @@ export const widgetsConfig = [
     key: "bio",
     type: "bio",
     dataGrid: { x: 6, y: 0, w: 4, h: 4},
-    text: "Mam 20 lat i interesuje się tworzeniem stron oraz aplikacji internetowych Aktualnie rozwijam swoje umiejętności w framework'u REACT. Pragnę się ciągle rozwijać i poznawać nowe techonologie.",
   },
 ]
+
+export const smallFixedLayout = {
+  xs: [
+    {"w":2,"h":2,"x":0,"y":2,"i":"gitHub"},
+    {"w":2,"h":2,"x":0,"y":14,"i":"css"},
+    {"w":4,"h":2,"x":0,"y":18,"i":"email"},
+    {"w":4,"h":2,"x":0,"y":0,"i":"firstNameAndSurname"},
+    {"w":2,"h":2,"x":2,"y":14,"i":"html"},
+    {"w":2,"h":2,"x":2,"y":16,"i":"node"},
+    {"w":2,"h":2,"x":0,"y":10,"i":"linkedin"},
+    {"w":2,"h":2,"x":2,"y":10,"i":"react"},
+    {"w":2,"h":2,"x":0,"y":12,"i":"js"},
+    {"w":2,"h":2,"x":0,"y":16,"i":"figma"},
+    {"w":2,"h":2,"x":2,"y":12,"i":"ts"},
+    {"w":2,"h":2,"x":2,"y":2,"i":"language"},
+    {"w":4,"h":4,"x":0,"y":4,"i":"bio"}
+  ]
+}

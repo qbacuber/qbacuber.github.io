@@ -21,7 +21,9 @@ const IconWithLink = ({ iconName, alt, link }: IconWithLinkProps) => (
 
 const TextWithLink = ({ text, link }: TextWithLinkProps) => (
   <div className="portfolioLink">
-
+    <div className="dragMeText">
+      drag me :) 
+    </div>
     <a href={link}>
       {text}
     </a>
