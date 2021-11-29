@@ -1,6 +1,6 @@
-import * as Icons from "../icons/icons"
+import * as Icons from "../icons/icons";
 
-export interface WidgetProps  {
+export interface WidgetProps {
   type: string;
   text: string;
   link?: string;

@@ -8,7 +8,7 @@
 }
 .react-grid-item img {
   pointer-events: none;
-  user-select: none;  
+  user-select: none;
 }
 .react-grid-item.cssTransforms {
   transition-property: transform;
@@ -39,8 +39,8 @@
   user-select: none;
 }
 
-.background{
-  background-color: #14111D;
+.background {
+  background-color: #14111d;
   color: #fff;
   height: 100%;
   display: flex;
@@ -50,92 +50,93 @@
   z-index: 4;
 }
 
-.widgetItem{
+.widgetItem {
   width: 100%;
-  height:100%;
-  background: linear-gradient(199.67deg, rgba(149, 249, 133, 0.2) 6.4%, rgba(196, 196, 196, 0) 91.57%);
+  height: 100%;
+  background: linear-gradient(
+    199.67deg,
+    rgba(149, 249, 133, 0.2) 6.4%,
+    rgba(196, 196, 196, 0) 91.57%
+  );
   box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(40px);
   border-radius: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.Circles1{
+.Circles1 {
   position: absolute;
   width: 325px;
   height: 325px;
   border-radius: 300px;
-  background: linear-gradient(224.07deg, #C567F4 15.51%, #E700EC 81.99%);
+  background: linear-gradient(224.07deg, #c567f4 15.51%, #e700ec 81.99%);
   animation: circles1 30s ease-in-out 0s infinite normal none;
 }
 
 @keyframes circles1 {
-  0.0%{
+  0.0% {
     left: 10%;
-    top:3%;
+    top: 3%;
   }
-  33.0%{
+  33.0% {
     left: 95%;
     top: 95%;
   }
-  66.0%{
+  66.0% {
     left: 0%;
     top: 60%;
   }
-  100%{
-    left:10%;
-    top:3%;
+  100% {
+    left: 10%;
+    top: 3%;
   }
 }
 
 @keyframes circles2 {
-  0.0%{
+  0.0% {
     left: 30%;
-    top:50%;
+    top: 50%;
   }
-  33.0%{
+  33.0% {
     left: 66%;
     top: 10%;
   }
-  55.0%{
+  55.0% {
     left: 80%;
     top: 50%;
   }
-  80%{
-    left:66%;
-    top:70%;
+  80% {
+    left: 66%;
+    top: 70%;
   }
-  100%{
-    left:30%;
-    top:50%;
+  100% {
+    left: 30%;
+    top: 50%;
   }
 }
 
+.Circles2 {
+  border-radius: 300px;
+  position: absolute;
+  width: 192px;
+  height: 192px;
+  left: 70%;
+  top: 35%;
 
-
-
-.Circles2{border-radius: 300px;
-position: absolute;
-width: 192px;
-height: 192px;
-left: 70%;
-top: 35%;
-
-background: linear-gradient(287.74deg, #8401C6 19.32%, #CB67FD 82.16%);
-animation: circles2 5s ease-in-out 0s infinite normal none;
+  background: linear-gradient(287.74deg, #8401c6 19.32%, #cb67fd 82.16%);
+  animation: circles2 5s ease-in-out 0s infinite normal none;
 }
 
-.Circles3{
+.Circles3 {
   position: absolute;
   width: 352px;
   height: 352px;
   left: 50%;
   bottom: 20%;
   border-radius: 300px;
-  background: linear-gradient(32.95deg, #8701C7 13.95%, #4A15B8 84.94%);
+  background: linear-gradient(32.95deg, #8701c7 13.95%, #4a15b8 84.94%);
 }
 
 .bio {
@@ -145,16 +146,23 @@ animation: circles2 5s ease-in-out 0s infinite normal none;
   user-select: none;
 }
 
-.portfolioLink > a, a:link{
+.portfolioLink > a,
+a:link {
   font-size: 2em;
   user-select: none;
 }
 
-.email > a, a:link {
+.email > a,
+a:link {
   font-size: 1.5em;
 }
 
-a, a:visited , a:hover, a:active, a:focus, a:link{
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+a:link {
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -171,7 +179,7 @@ a, a:visited , a:hover, a:active, a:focus, a:link{
   cursor: pointer;
 }
 
-.dragMeText{
+.dragMeText {
   display: none;
   position: absolute;
   left: 20px;
@@ -182,7 +190,7 @@ a, a:visited , a:hover, a:active, a:focus, a:link{
 }
 
 @media screen and (min-width: 480px) {
-  .dragMeText{
+  .dragMeText {
     display: block;
   }
 }
