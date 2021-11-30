@@ -1,4 +1,3 @@
-import { Circles } from "./Circles";
 import "../styles/style.css";
 import { Responsive as ResponsiveGridLayout } from "react-grid-layout";
 
@@ -15,8 +14,6 @@ export default function Dashboard({ size }: any) {
 
   return (
     <div className="background">
-      <Circles />
-
       <div
         style={{
           width: "1201px",

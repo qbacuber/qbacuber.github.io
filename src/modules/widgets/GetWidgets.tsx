@@ -36,12 +36,11 @@ const Bio = () => {
 
 const ChangeLanguage = () => {
   const { i18n } = useTranslation();
-
   return (
     <div className="changeLanguage">
       <button
         style={{
-          color: i18n.resolvedLanguage === "pl" ? "rgb(0, 255, 110)" : "white",
+          textDecoration: i18n.resolvedLanguage === "pl" ? "underline" : "none",
         }}
         onClick={() => i18n.changeLanguage("pl")}
       >
@@ -49,7 +48,7 @@ const ChangeLanguage = () => {
       </button>
       <button
         style={{
-          color: i18n.resolvedLanguage === "en" ? "rgb(0, 255, 110)" : "white",
+          textDecoration: i18n.resolvedLanguage === "en" ? "underline" : "none",
         }}
         onClick={() => i18n.changeLanguage("en")}
       >

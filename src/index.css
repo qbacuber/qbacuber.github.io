@@ -5,13 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    -30deg,
+    #ee7752,
+    #e73c7e,
+    #af1a96,
+    #680980,
+    #260879,
+    #0c26b8,
+    #0d42a5,
+    #2df7a2,
+    #1efa81
+  );
+  background-size: 600% 600%;
+  animation: gradient 20s ease infinite;
 }
 
 #root {
   height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
